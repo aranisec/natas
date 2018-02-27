@@ -4,43 +4,61 @@
 
      URL:[http://natas0.natas.labs.overthewire.org/](http://natas1.natas.labs.overthewire.org/)
 
-     Navigate to URL using the credentials renders a web page. Looking at the page source show the following code which contains password for Natas1.
+Navigate to URL using the credentials renders a web page. Looking at the page source show the following code which contains password for Natas1.
 
-`<html>`
+`<html>
+`
 
-`<head>`
+`<head>
+`
 
-`<!-- This stuff in the header has nothing to do with the level -->`
+`<!-- This stuff in the header has nothing to do with the level -->
+`
 
-`<link rel="stylesheet" type="text/css" href="http://natas.labs.overthewire.org/css/level.css">`
+`<link rel="stylesheet" type="text/css" href="http://natas.labs.overthewire.org/css/level.css">
+`
 
-`<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/jquery-ui.css" />`
+`<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/jquery-ui.css" />
+`
 
-`<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/wechall.css" />`
+`<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/wechall.css" />
+`
 
-`<script src="http://natas.labs.overthewire.org/js/jquery-1.9.1.js"></script>`
+`<script src="http://natas.labs.overthewire.org/js/jquery-1.9.1.js"></script>
+`
 
-`<script src="http://natas.labs.overthewire.org/js/jquery-ui.js"></script>`
+`<script src="http://natas.labs.overthewire.org/js/jquery-ui.js"></script>
+`
 
-`<script src=http://natas.labs.overthewire.org/js/wechall-data.js></script><script src="http://natas.labs.overthewire.org/js/wechall.js"></script>`
+`<script src=http://natas.labs.overthewire.org/js/wechall-data.js></script><script src="http://natas.labs.overthewire.org/js/wechall.js"></script>
+`
 
-`<script>var wechallinfo = { "level": "natas0", "pass": "natas0" };</script></head>`
+`<script>var wechallinfo = { "level": "natas0", "pass": "natas0" };</script></head>
+`
 
-`<body>`
+`<body>
+`
 
-`<h1>natas0</h1>`
+`<h1>natas0</h1>
+`
 
-`<div id="content">`
+`<div id="content">
+`
 
-`You can find the password for the next level on this page.`
+`You can find the password for the next level on this page.
+`
 
-``
+`
+`
 
-**`<!--The password for natas1 is gtVrDuiDfck831PqWsLEZy5gyDz1clto -->`**
+**`<!--The password for natas1 is gtVrDuiDfck831PqWsLEZy5gyDz1clto -->
+`**
 
-`</div>`
+`</div>
+`
 
-`</body>`
+`</body>
+`
 
 `</html>`
 
@@ -84,17 +102,23 @@ The page source shows the directory named as 'files'. Navigating the files folde
 
 http://natas2.natas.labs.overthewire.org/files/users.txt
 
-`# username:password `
+`# username:password 
+`
 
-`alice:BYNdCesZqW `
+`alice:BYNdCesZqW 
+`
 
-`bob:jw2ueICLvT `
+`bob:jw2ueICLvT 
+`
 
-`charlie:G5vCxkVV3m `
+`charlie:G5vCxkVV3m 
+`
 
-**`natas3:sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14`**` `
+**`natas3:sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14`**` 
+`
 
-`eve:zo4mJWyNj2 `
+`eve:zo4mJWyNj2 
+`
 
 `mallory:9urtcpzBmH `
 
@@ -104,7 +128,8 @@ http://natas2.natas.labs.overthewire.org/files/users.txt
 
 URL: http://natas3.natas.labs.overthewire.org/
 
-Navigating to URL show the page source as below. 
+
+Navigating to URL show the page source as below. 
 
 &lt;h1&gt;natas3&lt;/h1&gt;
 
@@ -140,25 +165,35 @@ Navigating to URL shows the web page as below:
 
 Based on the hint shown on the page 'while authorized users should come only from "[http://natas4.natas.labs.overthewire.org/](http://natas4.natas.labs.overthewire.org/)"',  added referer header through Burp Suite proxy as below:
 
-`GET / HTTP/1.1`
+`GET / HTTP/1.1
+`
 
-`Host: natas4.natas.labs.overthewire.org`
+`Host: natas4.natas.labs.overthewire.org
+`
 
-`User-Agent: Mozilla/5.0 (X11; Linux i686; rv:52.0) Gecko/20100101 Firefox/52.0`
+`User-Agent: Mozilla/5.0 (X11; Linux i686; rv:52.0) Gecko/20100101 Firefox/52.0
+`
 
-`Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8`
+`Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+`
 
-`Accept-Language: en-US,en;q=0.5`
+`Accept-Language: en-US,en;q=0.5
+`
 
-`Cookie: __cfduid=d7ce1c5bbe6df2931caac6d36bf060f851513884420; __utma=176859643.1738819372.1513884442.1513884442.1513884442.1; __utmb=176859643.3.10.1513884442; __utmc=176859643; __utmz=176859643.1513884442.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)`
+`Cookie: __cfduid=d7ce1c5bbe6df2931caac6d36bf060f851513884420; __utma=176859643.1738819372.1513884442.1513884442.1513884442.1; __utmb=176859643.3.10.1513884442; __utmc=176859643; __utmz=176859643.1513884442.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+`
 
-**`Referrer: http://natas5.natas.labs.overthewire.org/`**
+**`Referrer: http://natas5.natas.labs.overthewire.org/
+`**
 
-`Authorization: Basic bmF0YXM0Olo5dGtSa1dtcHQ5UXI3WHJSNWpXUmtnT1U5MDFzd0Va`
+`Authorization: Basic bmF0YXM0Olo5dGtSa1dtcHQ5UXI3WHJSNWpXUmtnT1U5MDFzd0Va
+`
 
-`Connection: close`
+`Connection: close
+`
 
-`Upgrade-Insecure-Requests: 1`
+`Upgrade-Insecure-Requests: 1
+`
 
 `Cache-Control: max-age=0`
 
